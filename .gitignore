@@ -12,7 +12,6 @@ install_manifest.txt
 *.user
 *.o
 *.reject
-*.so
 *~
 .gdb_history
 VERSION

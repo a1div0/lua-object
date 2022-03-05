@@ -21,7 +21,7 @@ git clone https://github.com/a1div0/object.git
 ```
 * install the `object` module using `tarantoolctl`:
 ```shell
-tarantoolctl rocks install https://raw.githubusercontent.com/a1div0/object/main/object-1.0.1-1.rockspec
+tarantoolctl rocks install https://raw.githubusercontent.com/a1div0/object/main/object-1.0.2-1.rockspec
 ```
 
 ## API
@@ -43,7 +43,7 @@ end
 
 local tableA = BaseTable:new()
 
-if tableA:myInstance(Object) then
+if tableA:isInstance(Object) then
     tableA:myFunction1(1, 2, 3)
 end
 ```

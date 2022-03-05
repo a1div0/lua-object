@@ -41,16 +41,13 @@ end
 ---@comment Проверяет принадлежность экземпляра объекта к этому классу или к одному из родителей этого класса
 ---@param obj table Проверяемый экземпляр класса
 -----@return boolean
-function Object:myInstance(obj)
+function Object:isInstance(obj)
     if type(obj) ~= 'table' or obj.meta == nil then
         return false
     end
-    if obj.meta.__index == self then
-        return true
-    end
-    local meta = obj.meta
+    local meta = self.meta
     while meta do
-        if meta.super == self then
+        if meta.__index == obj then
             return true
         elseif meta.super == nil then
             return false

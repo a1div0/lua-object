@@ -6,5 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.2] - 2022-03-05
+* Refactor - function `myInstance` rename to `isInstance`
+* Bug fix in function `isInstance`
+
 ## [1.0.0] - 2022-02-13
 Initial version 1.0
