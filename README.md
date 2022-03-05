@@ -21,7 +21,7 @@ git clone https://github.com/a1div0/object.git
 ```
 * install the `object` module using `tarantoolctl`:
 ```shell
-tarantoolctl rocks install https://raw.githubusercontent.com/a1div0/object/main/object-1.0.2-1.rockspec
+tarantoolctl rocks install https://raw.githubusercontent.com/a1div0/object/main/object-1.0.3-1.rockspec
 ```
 
 ## API

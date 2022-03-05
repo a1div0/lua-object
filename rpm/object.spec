@@ -1,5 +1,5 @@
 Name: object
-Version: 1.0.2
+Version: 1.0.3
 Release: 1%{?dist}
 Summary: Base class implementation for Lua
 Group: Applications/File
@@ -31,8 +31,8 @@ cp -p luakit/*.lua %{buildroot}%{_datadir}/lua/object
 %license LICENSE AUTHORS
 
 %changelog
-## [1.0.2] - 2022-03-05
-* Sat Mar 05 2022 Alexander Klenov <a.a.klenov@ya.ru> 1.0.2-1
+## [1.0.3] - 2022-03-05
+* Sat Mar 05 2022 Alexander Klenov <a.a.klenov@ya.ru> 1.0.3-1
 - Refactor - function `myInstance` rename to `isInstance`
 - Bug fix in function `isInstance`
 

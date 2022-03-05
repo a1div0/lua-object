@@ -1,9 +1,9 @@
 package = 'object'
-version = '1.0.2-1'
+version = '1.0.3-1'
 source  = {
     url    = 'git+https://github.com/a1div0/object.git';
     branch = 'main';
-    tag = '1.0.2'
+    tag = '1.0.3'
 }
 description = {
     summary  = "Base class implementation for Lua";
