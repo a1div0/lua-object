@@ -1,6 +1,5 @@
 CMakeFiles/
 CMakeCache.txt
-Makefile
 cmake_*.cmake
 install_manifest.txt
 *.a
@@ -19,5 +18,6 @@ Testing
 CTestTestfile.cmake
 *.snap
 *.xlog
-.rocks
-.idea
+.rocks/
+.idea/
+luacov.*
