@@ -17,15 +17,15 @@ Base class implementation for Lua
 You can:
 * clone the repository:
 ``` shell
-git clone https://github.com/a1div0/object.git
+git clone https://github.com/a1div0/lua-object.git
 ```
-* install the `object` module using `tarantoolctl`:
+* install the `lua-object` module using `tarantoolctl`:
 ```shell
-tarantoolctl rocks install https://raw.githubusercontent.com/a1div0/object/main/object-1.0.3-1.rockspec
+tarantoolctl rocks install https://raw.githubusercontent.com/a1div0/lua-object/main/lua-object-1.0.3-1.rockspec
 ```
 
 ## API
-* `local newClass = require('object'):extend()` - create a child class
+* `local newClass = require('lua-object'):extend()` - create a child class
 * `local obj = newClass:new()` - creates an instance of the class
 * `obj.myInstance(class)` - checks if an instance of an object belongs to this
 class or to one of the parents of this class
