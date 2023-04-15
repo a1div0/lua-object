@@ -1,13 +1,13 @@
-package = 'object'
-version = '1.0.3-1'
+package = 'lua-object'
+version = '1.1.0-1'
 source  = {
-    url    = 'git+https://github.com/a1div0/object.git';
+    url    = 'git+https://github.com/a1div0/lua-object.git';
     branch = 'main';
-    tag = '1.0.3'
+    tag = '1.1.0'
 }
 description = {
     summary  = "Base class implementation for Lua";
-    homepage = 'https://github.com/a1div0/object';
+    homepage = 'https://github.com/a1div0/lua-object';
     maintainer = "Alexander Klenov <a.a.klenov@ya.ru>";
     license  = 'BSD2';
 }
@@ -17,6 +17,6 @@ dependencies = {
 build = {
     type = 'builtin';
     modules = {
-        ['object'] = 'object/init.lua';
+        ['lua-object'] = 'lua-object/init.lua';
     }
 }

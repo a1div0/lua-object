@@ -7,7 +7,7 @@ Object.meta = {__index = Object}
 function Object:_create()
     local meta = rawget(self, "meta")
     if not meta then
-        error("Cannot inherit from instance object")
+        error("Cannot inherit from instance lua-object")
     end
     return setmetatable({}, meta)
 end

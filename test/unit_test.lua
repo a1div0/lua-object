@@ -1,12 +1,9 @@
---local ide_debug = require('ide-debug')
---ide_debug.enable_debugger(9999)
-
 local test = require('luatest')
 local group = test.group('unit')
 
-group.prototype_and_inheritance = function()
+group.test_prototype_and_inheritance = function()
 
-    local Object = require('object')
+    local Object = require('lua-object')
     function Object.symbol()
         return '!'
     end
@@ -38,8 +35,8 @@ group.prototype_and_inheritance = function()
     test.assert_equals(cat:voice(), 'Miaoww!', 'Class Cat has its own method')
 end
 
-group.is_instance = function()
-    local Object = require('object')
+group.test_is_instance = function()
+    local Object = require('lua-object')
     local Cat = Object:extend()
     local Dog = Object:extend()
     local dog = Dog:new()
@@ -47,7 +44,7 @@ group.is_instance = function()
 
     test.assert(dog:isInstance(Dog), 'dog is instance class Dog')
     test.assert(dog:isInstance(Object), 'dog is instance class Object')
-    test.assert(dog:isInstance(require('object')), 'dog is instance class Object over require()')
+    test.assert(dog:isInstance(require('lua-object')), 'dog is instance class Object over require()')
 
     test.assert(cat:isInstance(Cat), 'cat is instance class Cat')
     test.assert(cat:isInstance(Object), 'cat is instance class Object')

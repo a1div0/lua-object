@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0] - 2023-04-15
+* Refactor - rename repository from `object` to `lua-object`
+* Test and makefile fix
+* Add CI
+
 ## [1.0.3] - 2022-03-05
 * Refactor - function `myInstance` rename to `isInstance`
 * Bug fix in function `isInstance`

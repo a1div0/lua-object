@@ -3,7 +3,7 @@
     width="250" align="right">
 </a>
 
-# Object for Lua
+# lua-object
 ## Table of contents
 * [General information](#general-information)
 * [Installation](#installation)
@@ -32,7 +32,7 @@ class or to one of the parents of this class
 
 ## An example of using the module
 ```lua
-local Object = require('object')
+local Object = require('lua-object')
 
 local BaseTable = Object:extend()
 function BaseTable:myFunction1(arg1, arg2, arg3)
